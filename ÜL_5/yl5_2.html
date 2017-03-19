@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>5 kodune töö</title>
+		<link 	rel="stylesheet"
+			type="text/css"
+			href="stiil.css"
+/>
+	</head>
+	<body>
+
+		<img src="duck.png" alt="pilt" />
+
+		<div id="väline">
+
+			<div class="sisemine"/>
+			<div class="sisemine"/>
+			<div class="sisemine"/>
+			<div class="sisemine"/>
+			<div class="sisemine"/>
+			<div class="sisemine"/>
+
+		</div>
+		<script>
+        window.onload = function() {
+          var p = document.getElementById("väline");
+          p.onclick=function(){
+              p.style.left= Math.random()*370 + "px";
+              p.style.top = Math.random()*400 + "px";
+        }
+    }
+		</script>
+
+		<p>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+				<img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+			</a>
+		</p>
+	</body>
+</html>
