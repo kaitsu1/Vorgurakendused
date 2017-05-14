@@ -1,0 +1,21 @@
+<?php if (!empty($puurid)):
+	foreach($puurid as $id=>$puur):
+?>
+
+<div>
+    Puur <?php echo $id; ?><br>
+    <?php foreach ($puur as $id => $loom): ?>
+	<img src="<?php echo $loom['liik']?>" alt="<?php echo $loom['liik'];?>">
+<?php endforeach; ?>
+</div>
+
+<?php endforeach;
+endif;
+?>
+
+
+
+<!--
+<pre>
+    <?php print_r($puurid) ;?>     
+</pre> -->
