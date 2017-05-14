@@ -18,3 +18,10 @@ INSERT INTO `<sinu kasutajanimi/kood>_loomaaed` (`id`, `nimi`, `puur`, `liik`) V
 (9, 'Maali', 7, 'pildid/cow.png'),
 (10, 'Kasper', 7, 'pildid/cow.png'),
 (11, 'Mingi', 7, 'pildid/cow.png');
+
+CREATE TABLE IF NOT EXISTS `10153154_kylastajad` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `username` varchar(100) NOT NULL,
+  `passw` varchar(40) NOT NULL,
+  `visits` int(11) NOT NULL
+);
