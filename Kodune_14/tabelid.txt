@@ -1,0 +1,6 @@
+ALTER TABLE 10153154_kylastajad ADD roll ENUM( 'user', 'admin' ) 
+	NOT NULL DEFAULT 'user';
+
+
+INSERT INTO 10153154_kylastajad ( username, passw, visits, roll ) 
+VALUES ('admin', SHA1( 'admin' ) , 1,  'admin');
